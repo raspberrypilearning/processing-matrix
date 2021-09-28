@@ -1,59 +1,54 @@
-## Introduction
+When using `rotate()` and `translate()` functions you can save the coordinate settings by using the `pushMatrix()` function then restore those coordinate settings using the `popMatrix()` function.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+In this example, to create two rotating eyes, the settings are saved before either of the eyes are drawn. The screen is translated and rotated before the first eye is drawn then the settings restored before the second eye is drawn.
 
-### What you will make
-
---- no-print ---
-Add instructions for interacting with the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
----
-### Hardware
+language: python
 
-+ A computer or tablet capable of running Scratch 3
-
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](http://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
 ---
 
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
+def eye():
 
---- /collapse ---
+# Create an eye
+  fill(WHITE)
+  ellipse(0, 0, 150, 150) # Outer eye
+  no_stroke()
+  fill(BLUE)
+  ellipse(0, 0, 80, 80) # Iris
+  fill(BLACK)
+  ellipse(0, 0, 35, 35) # Pupil
+  fill(WHITE, 70)
+  ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity
+  ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
---- collapse ---
----
-title: Additional information for educators
----
+def draw():
 
-You can download the completed project [here](http://rpf.io/p/en/projectName-get){:target="_blank"}.
+  global BLUE, BLACK, WHITE
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
+  BLUE = color(1, 32, 100)
+  BLACK = color(0, 0, 0)
+  WHITE = color(255, 255, 255)
 
---- /collapse ---
+  background(WHITE)
+  translate(width/2, height/2) # Move screen to the middle
+
+  stroke(BLACK)
+  ellipse(0, 0, 300, 300) # Head
+
+  pushMatrix() # Saves current screen settings
+
+  translate(-100, 0) # Move screen to the left for left eye
+  for i in range(frame_count):
+    eye()
+    rotate(radians(45))
+
+  popMatrix() # Restores previous screen settings (removes the eye translation and rotation)
+
+  translate(100, 0) # Move screen to the right for right eye
+  for i in range(frame_count):
+    eye()
+    rotate(radians(45))
+
+--- /code ---
+

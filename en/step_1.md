@@ -1,4 +1,4 @@
-When using `rotate()` and `translate()` functions you can save the coordinate settings by using the `pushMatrix()` function then restore those coordinate settings using the `popMatrix()` function.
+When using `rotate()` and `translate()` functions you can save the coordinate settings by using the `push_matrix()` function then restore those coordinate settings using the `pop_matrix()` function.
 
 In this example, to create two rotating eyes, the settings are saved before either of the eyes are drawn. The screen is translated and rotated before the first eye is drawn then the settings restored before the second eye is drawn.
 
@@ -36,14 +36,14 @@ def draw():
   stroke(BLACK)
   ellipse(0, 0, 300, 300) # Head
 
-  pushMatrix() # Saves current screen settings
+  push_matrix() # Saves current screen settings
 
   translate(-100, 0) # Move screen to the left for left eye
   for i in range(frame_count):
     eye()
     rotate(radians(45))
 
-  popMatrix() # Restores previous screen settings (removes the eye translation and rotation)
+  pop_matrix() # Restores previous screen settings (removes the eye translation and rotation)
 
   translate(100, 0) # Move screen to the right for right eye
   for i in range(frame_count):

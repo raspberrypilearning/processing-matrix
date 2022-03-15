@@ -1,9 +1,9 @@
-eye
+عين
 
-WHITE
+أبيض
 
-BLUE
+أزرق
 
-BLACK
+أسود
 
-draw
+ارسم

@@ -1,0 +1,9 @@
+ojo
+
+BLANCO
+
+AZUL
+
+NEGRO
+
+draw

@@ -1,6 +1,6 @@
-When using `rotate()` and `translate()` functions you can save the coordinate settings by using the `push_matrix()` function then restore those coordinate settings using the `pop_matrix()` function.
+Al utilizar las funciones `rotate()` y `translate()`, puedes guardar la configuración de coordenadas utilizando la función `push_matrix()` y luego restaurar esa configuración de coordenadas utilizando la función `pop_matrix()`.
 
-In this example, to create two rotating eyes, the settings are saved before either of the eyes are drawn. The screen is translated and rotated before the first eye is drawn then the settings restored before the second eye is drawn.
+En el ejemplo a continuación, para crear dos ojos giratorios, la configuración se guarda antes de dibujar cualquiera de los ojos. La pantalla se traslada y gira antes de que se dibuje el primer ojo y luego se restablece la configuración antes de que se dibuje el segundo ojo.
 
 --- code ---
 ---
@@ -10,7 +10,7 @@ language: python
 
 def eye():
 
-# Create an eye
+# Crea un ojo
   fill(WHITE) ellipse(0, 0, 150, 150) # Outer eye no_stroke() fill(BLUE) ellipse(0, 0, 80, 80) # Iris fill(BLACK) ellipse(0, 0, 35, 35) # Pupil fill(WHITE, 70) ellipse(-25, -20, 30, 30) # Catchlight 1 with opacity ellipse(25, 25, 10, 10) # Catchlight 2 with opacity
 
 def draw():

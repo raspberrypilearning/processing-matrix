@@ -1,9 +1,9 @@
-eye
+oog
 
-WHITE
+WIT
 
-BLUE
+BLAUW
 
-BLACK
+ZWART
 
 draw

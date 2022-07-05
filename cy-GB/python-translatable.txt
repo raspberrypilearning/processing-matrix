@@ -1,9 +1,9 @@
-eye
+llygad
 
-WHITE
+GWYN
 
-BLUE
+GLAS
 
-BLACK
+DU
 
 draw

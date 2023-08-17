@@ -1,9 +1,9 @@
-eye
+olho
 
-WHITE
+BRANCO
 
-BLUE
+AZUL
 
-BLACK
+PRETO
 
-draw
+desenhar

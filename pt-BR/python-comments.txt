@@ -1,0 +1,23 @@
+Cria um olho
+
+Circulo externo do olho
+
+Íris
+
+Pupila
+
+Brilhos nos olhos 1 com opacidade
+
+Brilho nos olhos 2 com opacidade
+
+Move a tela para o meio
+
+Cabeça
+
+Salva as definições atuais da tela
+
+Move a tela para a esquerda, para desenhar o olho esquerdo
+
+Restaura as definições anteriores da tela (remove a translação e a rotação dos olhos)
+
+Move a tela para a direita, para desenhar o olho direito

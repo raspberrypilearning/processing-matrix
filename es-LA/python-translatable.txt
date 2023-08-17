@@ -6,4 +6,4 @@ AZUL
 
 NEGRO
 
-draw
+dibujar

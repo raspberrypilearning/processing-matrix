@@ -1,23 +1,23 @@
-Create an eye
+Cria um olho
 
-Outer eye
+Circulo externo do olho
 
-Iris
+Íris
 
-Pupil
+Pupila
 
-Catchlight 1 with opacity
+Brilhos nos olhos 1 com opacidade
 
-Catchlight 2 with opacity
+Brilho nos olhos 2 com opacidade
 
-Move screen to the middle
+Move a tela para o meio
 
-Head
+Cabeça
 
-Saves current screen settings
+Salva as definições atuais da tela
 
-Move screen to the left for left eye
+Move a tela para a esquerda, para desenhar o olho esquerdo
 
-Restores previous screen settings (removes the eye translation and rotation)
+Restaura as definições anteriores da tela (remove a translação e a rotação dos olhos)
 
-Move screen to the right for right eye
+Move a tela para a direita, para desenhar o olho direito

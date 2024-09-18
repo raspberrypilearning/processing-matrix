@@ -1,6 +1,6 @@
-When using `rotate()` and `translate()` functions you can save the coordinate settings by using the `push_matrix()` function then restore those coordinate settings using the `pop_matrix()` function.
+Quando usi le funzioni `rotate()` e `translate()` puoi salvare le impostazioni delle coordinate usando la funzione `push_matrix()` e, in seguito, ripristinarle usando la funzione `pop_matrix()`.
 
-In this example, to create two rotating eyes, the settings are saved before either of the eyes are drawn. The screen is translated and rotated before the first eye is drawn then the settings restored before the second eye is drawn.
+In questo esempio, per creare due occhi che si muovono, le impostazioni vengono salvate prima che venga disegnato uno dei due occhi. Lo schermo viene spostato e rotato prima che il primo occhio venga disegnato, poi le impostazioni vengono ripristinate prima che il secondo occhio venga disegnato.
 
 --- code ---
 ---

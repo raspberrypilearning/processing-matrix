@@ -1,0 +1,23 @@
+Disegna un occhio
+
+Parte esterna dell'occhio
+
+Iride
+
+Pupilla
+
+Riflesso 1 con opacità
+
+Riflesso 2 con opacità
+
+Sposta lo schermo al centro
+
+Testa
+
+Salva le impostazioni attuali dello schermo
+
+Sposta lo schermo a sinistra per l'occhio sinistro
+
+Ripristina le impostazioni dello schermo precedenti (rimuovi la traslazione e la rotazione dell'occhio)
+
+Sposta lo schermo a destra per l'occhio destro
